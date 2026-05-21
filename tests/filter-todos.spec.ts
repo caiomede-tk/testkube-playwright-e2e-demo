@@ -13,8 +13,7 @@ test.describe("Filter Todos", () => {
   });
 
   test("should filter active todos", async ({ page }) => {
-    // BUG: using wrong filter name "Remaining" instead of "Active"
-    await page.getByRole("link", { name: "Remaining" }).click();
+    await page.getByRole("link", { name: "Active" }).click();
 
     const todoItems = page.getByTestId("todo-item");
     await expect(todoItems).toHaveCount(1);
@@ -22,8 +21,7 @@ test.describe("Filter Todos", () => {
   });
 
   test("should filter completed todos", async ({ page }) => {
-    // BUG: using wrong filter name "Done" instead of "Completed"
-    await page.getByRole("link", { name: "Done" }).click();
+    await page.getByRole("link", { name: "Completed" }).click();
 
     const todoItems = page.getByTestId("todo-item");
     await expect(todoItems).toHaveCount(1);
