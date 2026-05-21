@@ -1,0 +1,12 @@
+{
+  "name": "testkube-e2e-demo",
+  "version": "1.0.0",
+  "description": "Playwright e2e tests against TodoMVC React for Testkube demo",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ci": "npx playwright test --reporter=list"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0"
+  }
+}
