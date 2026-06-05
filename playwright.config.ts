@@ -7,7 +7,9 @@ export default defineConfig({
   use: {
     baseURL: "https://todomvc.com/examples/react/dist/",
     headless: true,
-    screenshot: "only-on-failure",
+    screenshot: "on",
+    trace: "on",
+    video: 'on',
   },
   reporter: [["list"]],
 });
