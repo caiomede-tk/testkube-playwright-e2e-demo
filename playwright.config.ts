@@ -11,5 +11,5 @@ export default defineConfig({
     trace: "on",
     video: 'on',
   },
-  reporter: [["list"],["html"]]
+  reporter: 'html',
 });
